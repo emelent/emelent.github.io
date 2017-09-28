@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>emelent.</title>
   <meta charset="UTF-8">
-  <title>Roy Of Earth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <!--[if IE]><link rel="shortcut icon" href="./favicons/favicon.ico"><![endif]-->
+  <!-- Add to home screen for Android and modern mobile browsers -->
+  <link rel="manifest" href="/favicons/manifest.json">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="emelent.">
+  <link rel="apple-touch-icon" href="./favicons/apple-touch-icon-152x152.png">
+  <!-- Add to home screen for Windows -->
+  <meta name="msapplication-TileImage" content="./favicons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+
+  <link rel="stylesheet" href="tachyons.min.css">
+  <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
 </head>
-<body>
-  <h2>Hello Earth man or woman, this site has not yet been formed.</h2>  
+<style>
+	body{background: #FFFFFF;}
+	.ma-auto{margin: auto;}
+	.inline-block{display: inline-block;}
+	.tdn{text-decoration: none;}
+
+	.-w-10{width: 10%;}
+	.-w-15{width: 15%;}
+	.-w-20{width: 20%;}
+	.-w-30{width: 30%;}
+	.-w-50{width: 50%;}
+
+	/*phones*/
+	@media (max-width:767px) {
+
+		/* .pa05{padding: 0.5rem 0.4rem;} */
+	}
+	/*tablet*/
+	@media (min-width:768px) and (max-width:991px) {
+		.-w-10-ns{width: 10%;}
+		.-w-15-ns{width: 15%;}
+		.-w-20-ns{width: 20%;}
+		.-w-30-ns{width: 30%;}
+		.-w-50-ns{width: 50%;}
+	}
+
+	/*monitor*/
+	@media (min-width:992px) and (max-width:1199px) {
+		.-w-10-m{width: 10%;}
+		.-w-15-m{width: 15%;}
+		.-w-20-m{width: 20%;}
+		.-w-30-m{width: 30%;}
+		.-w-50-m{width: 50%;}
+	}
+
+	/*large monitor*/
+	@media (min-width:1200px) {
+		.-w-10-l{width: 10%;}
+		.-w-15-l{width: 15%;}
+		.-w-20-l{width: 20%;}
+		.-w-30-l{width: 30%;}
+		.-w-50-l{width: 50%;}
+	}
+</style>
+<body class="avenir">
+	<div class="absolute w-100 h-100 tc">
+		<!-- The title thingy -->
+		<div class="pa3 pv4 pv5-ns tc overflow-hidden">
+			<span class="pv3 ph4  near-black f2 f1-ns fw4 tracked">
+				emelent.
+			</span>
+		</div>
+
+		<!-- Bio.. if I can call it that -->
+		<p class="mb5 tc ph4 ph7-l f5 f4-ns tracked">
+			<!-- I'm a <span class="strike">programmer,</span>
+			wait, <b>software developer</b>. -->
+			I write <b>code</b> sir.
+		</p>
+
+		<!-- This is my icon mmmkay -->
+		<img class="bg-black br-100 b--black b--solid bw1 pointer w-20 -w-10-l -w-15-ns -w-15-m  ma-auto" 
+			src="./image/main.svg" alt="icon" />
+	
+		<!-- Those as at the bottom -->
+		<div class="w-100 h-10 tc absolute bottom-0 left-0 right-0 center overflow-hidden">	
+			<a href="https://github.com/emelent" class="black tdn outline-0 hover-bg-black hover-white pointer inline-block bg-white b--near-black b--solid bw1 bw2-ns ma1 mb3 ma3-ns pa3 pa3-ns ttu f6 fw7">
+				github
+			</a>
+			<a href="http://codepen.io/MK-1/" class="black tdn outline-0 hover-bg-black hover-white pointer inline-block bg-white b--near-black b--solid bw1 bw2-ns ma1 mb3 ma3-ns pa3 pa3-ns ttu f6 fw7">
+				codepen
+			</a>
+			<a href="https://gitlab.com/users/airman/projects" class="black tdn outline-0 hover-bg-black hover-white pointer inline-block bg-white b--near-black b--solid bw1 bw2-ns ma1 mb3 ma3-ns pa3 pa3-ns ttu f6 fw7">
+				gitlab
+			</a>
+		</div>
+	</div>
 </body>
 </html>
