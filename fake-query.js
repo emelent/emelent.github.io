@@ -49,7 +49,7 @@ const $ = function(){
 		replaceClass(c1, c2){
 			this.elements.forEach(el => el.classList.replace(c1, c2))
 		}
-		removeClass(c1, c2){
+		removeClass(c){
 			this.elements.forEach(el => el.classList.remove(c))
 		}
 	}
