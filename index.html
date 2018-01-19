@@ -12,247 +12,51 @@
 	<link rel="manifest" href="/manifest.json">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="tachyons.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 </head>
 <style>
-	body {
-		background: #ffffff;
+	html{
+		background: #000;
+		text-align: justify;
+		color: #bbb;
+		font-family:  vt323;
 	}
-	/* 2 stack menu icon */
-
-	.stack {
-		top: 0px;
-		right: 0px;
+	.mid{
 		position: absolute;
-		height: 40px;
-		width: 33px;
-		padding-top: 26px;
-		padding-right: 10px;
-		cursor: pointer;
-		z-index: 3;
-	}
-
-	.stack__line {
-		width: 100%;
-		height: 2px;
-		margin-bottom: 5px;
-		background-color: #222;
-		transition: cubic-bezier(.17, .67, .17, .88) transform 0.3s;
-	}
-
-	.stack--active .stack__line:first-child {
-		transform: rotate(-45deg) translateY(4px) translateX(-5px);
-	}
-
-	.stack--active .stack__line:nth-child(2) {
-		transform: rotate(45deg);
-	}
-
-	.ma-auto {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		margin: auto;
+		height: 100px;
+		width: 400px;
+		font-size: 1.5em;
+		border: 1px solid gray;
+		padding: 15px;
+
 	}
-
-	.inline-block {
-		display: inline-block;
+	.pic{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 500px;
+		margin: auto;
+		height: 100px;
+		width: 100px;
 	}
-
-	.tdn {
-		text-decoration: none;
-	}
-
-	.bio--min{
-		margin-top: -50%;
-	}
-
-	.trans-ease-all-04 {
-		transition: ease all 0.4s;
-	}
-
-	.trans-ease-all-08 {
-		transition: ease all 0.8s;
-	}
-
-	.trans-cubic-all-04 {
-		transition: cubic-bezier(.17, .67, .17, .88) all 0.4s;
-	}
-
-	.trans-cubic-all-08 {
-		transition: cubic-bezier(.17, .67, .17, .88) all 0.4s;
-	}
-
-	.trans-delay-04 {
-		transition-delay: 0.4s
-	}
-
-	.trans-delay-08 {
-		transition-delay: 0.8s
-	}
-
-	.-w-10 {
-		width: 10%;
-	}
-
-	.-w-15 {
-		width: 15%;
-	}
-
-	.-w-20 {
-		width: 20%;
-	}
-
-	.-w-30 {
-		width: 30%;
-	}
-
-	.-w-50 {
-		width: 50%;
-	}
-	/*phones*/
-
-	@media (max-width:767px) {
-
-		* {
-			cursor: default !important;
-		}
-	}
-	/*tablet*/
-
-	@media (min-width:768px) and (max-width:991px) {
-		.-w-10-ns {
-			width: 10%;
-		}
-		.-w-15-ns {
-			width: 15%;
-		}
-		.-w-20-ns {
-			width: 20%;
-		}
-		.-w-30-ns {
-			width: 30%;
-		}
-		.-w-50-ns {
-			width: 50%;
-		}
-	}
-	/*monitor*/
-
-	@media (min-width:992px) and (max-width:1199px) {
-		.-w-10-m {
-			width: 10%;
-		}
-		.-w-15-m {
-			width: 15%;
-		}
-		.-w-20-m {
-			width: 20%;
-		}
-		.-w-30-m {
-			width: 30%;
-		}
-		.-w-50-m {
-			width: 50%;
-		}
-	}
-	/*large monitor*/
-
-	@media (min-width:1200px) {
-		.-w-10-l {
-			width: 10%;
-		}
-		.-w-15-l {
-			width: 15%;
-		}
-		.-w-20-l {
-			width: 20%;
-		}
-		.-w-30-l {
-			width: 30%;
-		}
-		.-w-50-l {
-			width: 50%;
-		}
-	}
-
-	
 </style>
+<body>
 
-<body class="avenir">
-	<!-- Menu Button -->
-	<div id="stack" class="stack">
-		<div class="stack__line"></div>
-		<div class="stack__line"></div>
+	<a href="https://github.com/emelent">
+		<img class="pic" src="./image/main.svg" alt=""/>
+	</a>
+	<div class="mid">
+		$> echo "'Tis about to get perculiar."<br/>
+		&& ./update_webpage.sh &&<br/>
+		echo "Bravo Sherlock... bravo."
 	</div>
-	<div id="more" class="overflow-hidden bg-white absolute absolute--fill w-100 h-100 pa1 pv4 tc">
-		<div class="tl ph2 pa4-ns w-60-ns w-50-l ma-auto mt3 mt0-ns">
-			<div  id="bio" class="trans-cubic-all-04 pv1 pv5-l near-black f3 f2-ns f1-l f2-m pa4-m  fw4 tracked">
-				They Call It A Bio
-			</div>
-			<p class="tracked lh-title ">My name is <b>Roy Motloutsi</b>, and I'm a software developer.</p>
-			<p class="tracked lh-title mv4">
-				I'm open to anything in the dev world, though often find myself playing around
-				with front-end and back-end web development.
-			</p>
-			<p class="tracked lh-title">
-				Check out my projects, and give me a shout.
-			</p>
-
-			<img class="dn db-ns db-l  w-20 ma-auto pa4-ns pt0-l" src="./image/dev.svg" alt="">
-		</div>
-		<button id="contact" class="black tdn outline-0 hover-bg-black hover-white pointer inline-block bg-white b--near-black b--solid bw1 bw2-ns ma1 mb3 ma3-ns pa3 pa3-ns ttu f6 fw7">
-				Contact Me
-		</button>
-		<div class="mt6 lh-title">
-			I guess an email will do right?<br/><br/><b>roy.motloutsi@gmail.com</b> 
-		</div>
-	</div>
-	<div class="overflow-hidden bg-white absolute w-100 h-100 tc z-1">
-		<!-- The title thingy -->
-		<div class="pa3 pv4 pv5-ns tc overflow-hidden">
-			<span class="pv3 ph4  near-black f2 f1-ns fw4 tracked">
-				emelent.
-			</span>
-		</div>
-
-		<!-- Catch phrase maybe? -->
-		<p class="mb5 tc ph4 ph7-l f5 f4-ns tracked">
-			I write <b>code</b>, sir.
-		</p>
-
-		<!-- This is my icon mmmkay -->
-		<img id="my-icon" class="bg-black br-100 b--black b--solid bw1 pointer w-20 -w-10-l -w-15-ns -w-15-m  ma-auto" src="./image/main.svg"
-		    alt="icon" />
-
-		<!-- Those as at the bottom -->
-		<div class="w-100 h-10 tc absolute bottom-0 left-0 right-0 center overflow-hidden">
-			<a href="https://github.com/emelent" class="black tdn outline-0 hover-bg-black hover-white pointer inline-block bg-white b--near-black b--solid bw1 bw2-ns ma1 mb3 ma3-ns pa3 pa3-ns ttu f6 fw7">
-				github
-			</a>
-			<a href="http://codepen.io/MK-1/" class="black tdn outline-0 hover-bg-black hover-white pointer inline-block bg-white b--near-black b--solid bw1 bw2-ns ma1 mb3 ma3-ns pa3 pa3-ns ttu f6 fw7">
-				codepen
-			</a>
-			<a href="https://gitlab.com/users/airman/projects" class="black tdn outline-0 hover-bg-black hover-white pointer inline-block bg-white b--near-black b--solid bw1 bw2-ns ma1 mb3 ma3-ns pa3 pa3-ns ttu f6 fw7">
-				gitlab
-			</a>
-		</div>
-	</div>
-	<script src="./fake-query.js"></script>
-	<script>
-		const elIcon = $('#my-icon')
-		const elStack = $('#stack')
-		const elMore = $('#more')
-		const elBio = $('#bio')
-
-		const togglemore = () => {
-			elStack.toggleClass('stack--active')
-			elMore.toggleClass('z-2')
-			elBio.removeClass('bio--min')
-		}
-		elIcon.on('click', togglemore)
-		elStack.on('click', togglemore)
-		$('#contact').on('click', function(){
-			elBio.toggleClass('bio--min')
-		})
-	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112333422-1"></script>
 	<script>
