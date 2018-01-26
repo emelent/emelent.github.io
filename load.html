@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>F.U.S</title>
+
+	<link rel="stylesheet" href="./tachyons.min.css">
+
+<style>
+
+html{
+	font-family: sans-serif;
+}
+
+.-absolute-center{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.-ml-1{margin-left: -5px;}
+
+.-bar{
+	width: 200px;
+	height: 8px;
+	left: 0;
+	right: 0;
+	bottom: 150px;
+	margin: auto;
+
+	border: 2px solid black;
+}
+.-meter{
+	background: black;
+	width: 70%;
+	height: 100%;
+}
+.-title{
+	margin-top: 15vh;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="-title tc f3">
+		<small class="pa1 b--black b--solid ">70%</small><b class="pa2 bg-black white -ml-1">WOKE</b>
+	</div>
+	<img class="fixed -absolute-center"
+		width="254"
+		src="./image/sleep.png" alt="Should be loading image">
+	<div class="-bar fixed  tc">
+		<div class="-meter"></div>
+		<div class="f3 pointer pt4 dn">CONTINUE</div>
+	</div>
+</body>
+</html>

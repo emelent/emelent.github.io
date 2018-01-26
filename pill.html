@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>F.U.S</title>
+
+	<link rel="stylesheet" href="./tachyons.min.css">
+
+<style>
+
+html{
+	font-family: sans-serif;
+	background: lightseagreen;
+}
+
+.-absolute-center{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.-title{
+	margin-top: 15vh;
+}
+
+.-left-hand{
+	left: -40vw;
+	right: 0;
+	top: -20px;
+	margin: auto;
+}
+
+.-right-hand{
+	left: 0;
+	right: -40vw;
+	top: -20px;
+	margin: auto;
+}
+
+.-hover:hover{
+	transform: scale(1.05);
+}
+
+.-trans-ease{
+	transition: 0.4s ease all;
+}
+.-neo-hand{
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.-message{
+	background: #fff;
+	border: 2px solid black;
+	border-radius: 4px;
+
+	width: 650px;
+	height: 200px;
+}
+</style>
+</head>
+<body>
+	<img class="absolute bottom-0 left-0 pa4 pointer -hover -trans-ease"
+		width="103" 
+		src="./image/quest.png" alt="">
+	<img class="absolute -right-hand -hover pointer -trans-ease"
+		src="./image/morph-left.png" alt="">
+	<img class="absolute -left-hand -hover pointer -trans-ease" 
+		src="./image/morph-right.png" alt="">
+
+	<img class="absolute bottom--2 -neo-hand" 
+		width="250"
+		src="./image/neo-hand.png" alt="">
+	<div class="-message tc fixed -absolute-center f2 pa3">
+		Great fricking choice Neo! You've selected the <b class="red">red</b>
+		brand of drugs(my <i>personal</i> favourite).
+		Press 'R' and enjoy the trip. 
+	</div>
+</body>
+</html>
