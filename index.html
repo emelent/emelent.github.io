@@ -13,38 +13,51 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./tachyons.min.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower" rel="stylesheet"> -->
 </head>
-<style>
-	html{
-		background: #fff;
-		font-family:  sans-serif;
-	}
-
-	.-col-50{
-		float:left;
-		width: 50%;
-	}
-</style>
 <body>
-	<div class="f1 pa2">
+	<div class="pt4 f2 tc avenir fw4">
+		<img class="-brand"
+			width="48" 
+			src="./image/main.svg" alt="">
 		EMELENT
 	</div>
-	<div id="content" class="-col-50">
-		hey
-	</div>
-	<div id="visual" class="-col-50">
-		<img src="./image/m1.png" alt="">
-	</div>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112333422-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+	<div class="-speech absolute f3">Mhmmmm....</div>
 
-	gtag('config', 'UA-112333422-1');
+	<!-- condescending psychologist -->
+	<img class="-psy-body db fixed" 
+		width="300"
+		src="./image/psy-1Asset 3.svg" alt="">
+	<img class="-psy-pen db fixed" 
+		width="200"
+		src="./image/psy-rightAsset 2.svg" alt=""><br/>
+	<img class="-psy-note db fixed" 
+		width="200"
+		src="./image/psy-leftAsset 1.svg" alt=""><br/>
+
+	<!-- sticky notes -->
+	<div class="-purple fixed -absolute-center avenir">
+		<div class="-comment pa3 fixed f3">You should try art.</div>
+	</div>
+	<div class="-yellow fixed -absolute-center"></div>
+	<div class="-black	 fixed -absolute-center tc f3 fw1 pt4">
+		<a class="no-underline white db mv4 " href="#">GITHUB</a>
+		<a class="no-underline white db mv4" href="#">GITLAB</a>
+		<a class="no-underline white db mv4" href="#">CODEPEN</a>
+
+	</div>
+
+
+	<img class="-what fixed" 
+		src="./image/try-itAsset 1.svg" alt="">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112333422-1"></script>
+	<script> -->
 	</script>
+	<script src="./site.js"></script>
 </body>
 
 </html>
