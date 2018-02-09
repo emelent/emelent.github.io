@@ -1,46 +1,11 @@
+@font-face{
+	src: url('./fonts/fira.ttf');
+	font-family: 'pix';
+}
+
 html{
-	background: #fff;
-	font-family:  sans-serif;
-	cursor: url('./image/finger.png'), auto !important;
-
-}
-body{
-
-}
-
-.-my-cursor{
-
-	cursor: url('./image/finger.png'), auto;
-}
-.-col-50{
-	float:left;
-	width: 50%;
-}
-
-.-purple{
-	background: #76557a;
-	width: 77vw;
-    max-width: 800px;
-    height: 70vh;
-	left: 44vw !important;
-	top: 200px !important;
-}
-
-.-yellow{
-	background: #fbd665;
-	
-    top: 34vh !important;
-	left: -20vw !important;    
-	width: 400px;
-    height: 400px;
-}
-
-.-black{
-	background: #30333a;
-	width: 300px;
-	height: 300px;
-
-    top: -30vh !important;
+	background: #000;
+	color:#fff;
 }
 
 .-absolute-center{
@@ -51,49 +16,85 @@ body{
 	margin: auto;
 }
 
-.-brand{
-	top: 11px;
-    position: relative;
+.-pix{
+	font-family: pix;
+}
+.-container{
+	width: 640px;
+	height: 480px;
+
+	/* border: 1px  solid #fff; */
 }
 
-.-psy-body{
+.-split{
+	/* border: 1px  solid #fff; */
+	overflow: hidden;
+	height: 70%;
+}
+
+.-social{
+	width: 45%;
+	height: 55px;
+	margin-bottom: 15px;
+	line-height: 55px;
+	text-align: center;
+	font-size: 32px;
+	border: 1px solid #fff;
+}
+
+.-nav-btn{
+	position: relative;
+	width: 100%;
+	height: calc(((100% - 70px) / 2) - 15px);
+	text-align: center; 
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+
+.-nav-btn img{
+	width: 50%;
+}
+
+
+.-nav-btn:hover img{
+	transform: scale(1.1);
+}
+.-social-offset{
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
+
+
+.-message-box{
+	width:100%;
+	height: 20%;
+	border: 1px  solid #fff;
+	bottom: 10%;
+	overflow-y: auto;
+}
+
+.-comm-box{
+	width: 150px;
+	height: calc(10% - 15px);
+	border: 1px  solid #fff;
 	bottom: 0;
-	left: -30px;
-	width: 350px;
+	right: 0;
+
+	pointer-events: none;
+	color: gray;
 }
 
-.-psy-pen{
-	bottom: -2vh;
-    width: 164px;
-    left: -18px;
+.-comm-box.-active{
+	pointer-events: initial;
+	color: #ddd;
+}
+.-comm-btn:hover{
+	color: yellow;
 }
 
-.-psy-note{
-    width: 220px;
-    bottom: -2vh;
-    left: 48px;
-}
-
-.-what{
-    width: 350px;
-    right: 0vw;
-    bottom: 0vh;
-}
-
-.-speech{
-	left: 24vw;
-    top: 20vh;
-    padding: 20px;
-	border: 2px solid;
-	background: #fff;
-	border-radius: 10px;
-}
-
-.-comment{
-    right: 25px;
-    bottom: 488px;
-    color: #000;
-    background: #fff;
-    border: 2px solid;
-    padding: 12px;
+.-version-box{
+	width: 200px;
+	height: calc(10% - 15px);
+	bottom: 0;
+	left: 0;
 }

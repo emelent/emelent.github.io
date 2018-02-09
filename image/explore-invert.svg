@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62">
+  <title>invertaAsset 4</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="main">
+      <g>
+        <g>
+          <path d="M31,61.5A30.5,30.5,0,1,1,54.25,50.74,30.51,30.51,0,0,1,31,61.5Z" style="fill: #fff"/>
+          <path d="M31,1h0A30,30,0,1,1,8.13,11.58,30,30,0,0,1,31,1m0-1a31,31,0,1,0,20,7.37A30.93,30.93,0,0,0,31,0Z"/>
+        </g>
+        <path d="M31,31,10.94,7.37a31,31,0,0,1,39.78-.29Z"/>
+        <circle cx="31" cy="33" r="9" transform="translate(-14.22 35.27) rotate(-49.67)"/>
+      </g>
+    </g>
+  </g>
+</svg>
