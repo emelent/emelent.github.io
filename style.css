@@ -86,7 +86,7 @@ html{
 
 .-comm-box.-active{
 	pointer-events: initial;
-	color: #ddd;
+	color: #fff;
 }
 .-comm-btn:hover{
 	color: yellow;
