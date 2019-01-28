@@ -1,0 +1,6 @@
+{
+	"applinks": {
+		"appID": "<TEAM_ID>.za.co.sticitt.sticittpay.dev",",
+		"paths": ["*"]
+	}
+}
